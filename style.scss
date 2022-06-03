@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$card-size:20rem;
+$text-primary-color:#5c5353;
+$text-secondary-color:#121212;
+$accent-color:#c5c5c5;
+$background-color:rgb(246,
+255,
+247);
+$promo-color:rgb(33,
+163,
+29);
+@mixin paragraph-style($size,
+$weight,
+$color:$text-primary-color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin display-list($space:space-evenly,
+$direction:column) {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+}
+
+@mixin flex-display($direction:row,
+$justify:space-around,
+$width:100%,
+$align:center) {
+    width: $width;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.card {
+    @include flex-display(column);
+    width: $card-size;
+    font-family: 'Roboto', sans-serif;
+    color: $text-primary-color;
+    border-radius: 8px;
+    position: relative;
+    top: 5rem;
+    margin: auto;
+    background-color: $background-color;
+    padding: 1rem;
+}
+
+.card__block {
+    @include flex-display(row,
+    space-between);
+    position: relative;
+}
+
+.card__block--top {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card__block--middle {
+    border: 1px solid $accent-color;
+    border-top: none;
+    background-color: #ffffff;
+    width: 90%;
+    padding: 0 1rem 0 1rem;
+}
+
+.card__block--green {
+    color: $promo-color;
+}
+
+.card__block--first {
+    border-top: 1px solid $accent-color;
+}
+
+.card__number--total {
+    @include paragraph-style(1rem,
+    bold,
+    $text-secondary-color)
+}
+
+.card__title {
+    @include paragraph-style(1.5rem,
+    bold);
+}
+
+.card__number {
+    @include paragraph-style(1.5rem,
+    bold,
+    #ffffff);
+    border-radius: 15px;
+    border: 1px solid $text-primary-color;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    background-color: $text-primary-color;
+}
+
+.card__list {
+    @include flex-display(column,
+    center,
+    auto,
+    flex-start);
+}
+
+.card__name {
+    @include paragraph-style(1.1rem,
+    bold,
+    $text-secondary-color)
+}
+
+.card__name--green {
+    color: $promo-color;
+}
+
+.card__description {
+    margin-top: -1rem;
+    font-size: 0.9rem;
+}
+
+.card__btn {
+    @include flex-display($justify: center);
+    margin-top: 1rem;
+}
+
+input[type=text] {
+    height: 2rem;
+    border: 1px solid $accent-color;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 100%;
+}
+
+input[type=button] {
+    height: 2.3rem;
+    outline: none;
+    background-color: $text-primary-color;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 0 1rem 0 1rem;
+    margin-left: -0.1rem;
+}

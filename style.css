@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  font-family: 'Roboto', sans-serif;
+  color: #5c5353;
+  border-radius: 8px;
+  position: relative;
+  top: 5rem;
+  margin: auto;
+  background-color: #f6fff7;
+  padding: 1rem;
+}
+
+.card__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.card__block--top {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card__block--middle {
+  border: 1px solid #c5c5c5;
+  border-top: none;
+  background-color: #ffffff;
+  width: 90%;
+  padding: 0 1rem 0 1rem;
+}
+
+.card__block--green {
+  color: #21a31d;
+}
+
+.card__block--first {
+  border-top: 1px solid #c5c5c5;
+}
+
+.card__number--total {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #121212;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5c5353;
+}
+
+.card__number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #5c5353;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  background-color: #5c5353;
+}
+
+.card__list {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card__name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #121212;
+}
+
+.card__name--green {
+  color: #21a31d;
+}
+
+.card__description {
+  margin-top: -1rem;
+  font-size: 0.9rem;
+}
+
+.card__btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+input[type=text] {
+  height: 2rem;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 100%;
+}
+
+input[type=button] {
+  height: 2.3rem;
+  outline: none;
+  background-color: #5c5353;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 0 1rem 0 1rem;
+  margin-left: -0.1rem;
+}
+/*# sourceMappingURL=style.css.map */
